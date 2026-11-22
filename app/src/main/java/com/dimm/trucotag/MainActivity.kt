@@ -48,6 +48,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Brush
@@ -162,7 +163,6 @@ private fun TrucoTagApp(
 
                 Spacer(Modifier.height(20.dp))
                 Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.Center) {
-                    Box(Modifier.widthLine(), contentAlignment = Alignment.Center) {}
                     Text("PARTIDA ATÉ", color = Muted, fontSize = 10.sp, fontWeight = FontWeight.Bold, letterSpacing = 2.4.sp)
                     Spacer(Modifier.size(10.dp))
                     Text("$target", color = GoldLight, fontSize = 22.sp, fontWeight = FontWeight.Black)
@@ -470,4 +470,3 @@ private fun ActionButton(
     }
 }
 
-private fun Modifier.widthLine(): Modifier = this.then(Modifier.size(0.dp))
